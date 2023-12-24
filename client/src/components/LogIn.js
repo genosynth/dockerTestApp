@@ -4,8 +4,8 @@ import jwt from 'jwt-decode'
 
 function LogIn() {
 
-  const [username , setUsername] = useState("")
-  const [password, setPassword] = useState("")
+  const [username , setUsername] = useState(" ")
+  const [password, setPassword] = useState(" ")
 
   const handleChangeUsername = (event) => {
       setUsername(event.target.value)
@@ -63,8 +63,8 @@ function LogIn() {
 
   return (
     <form onSubmit={loggingIn}>
-        <input type="text" placeholder="username" onChange={handleChangeUsername} value={username}></input>
-        <input type="password" placeholder="password" onChange={handleChangePassword} value={password}></input>
+        <input type="text" placeholder="username" onChange={handleChangeUsername} ></input>
+        <input type="password" placeholder="password" onChange={handleChangePassword} ></input>
         <button type='submit'>Log In</button>
     </form>
   )

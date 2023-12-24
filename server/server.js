@@ -1,6 +1,6 @@
 const express = require('express'); //Import the express dependency
 const app = express();              //Instantiate an express app, the main work horse of this server
-const port = 8081;                  //Save the port number where your server will be listening
+const port = process.env.PORT || 8081 ;                  //Save the port number where your server will be listening
 const mongoose = require('mongoose')               
 const routesUrls = require("./routes/routes.js")
 const cors = require('cors');      
